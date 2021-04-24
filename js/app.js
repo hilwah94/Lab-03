@@ -94,35 +94,20 @@ for (let i=0 ; i<4 ; i++)
     
 }
 
-let favBand = ['Metallica','Nirvana','Opeth','Pink Floyd','Katatonia'];
+let favBand = ['metallica','nirvana','opeth','pink floyd','katatonia'];
 console.log(favBand)
-for (let j=0;j<6;j++)
+for (let j=0 ;j<6 ;j++)
 {
-    favBandQ = prompt('what is my favourite band ?');
-    favBandQ = favBandQ.toLowerCase();
-    if (favBandQ===favBand[0] || favBandQ===favBand[1] || favBandQ===favBand[2]
-        || favBandQ===favBand[3] || favBandQ===favBand[4])
-    
-        {
-            alert ('Yep, I love them');
-            break;
-        } else {
-            alert('soory, you gussed worong');
-        }
-
+  favBandQ = prompt('what is my favourite band ?');
+  favBandQ.toLowerCase();
+  {
+    if (favBandQ === favBand[0] ||favBandQ === favBand[1] || favBandQ === favBand[2] || favBandQ === favBand[3]
+      || favBandQ === favBand[4])
+    {
+      alert ('Yep, I love them');
+      break;
+    } else {
+      alert('soory, you gussed worong');
     }
-    
-    // if(favBand[0],[1],[2],[3],[4] === favBandQ)
-    // { alert ('Yep, I love them')
-    // this method don't work
-    // if (favBand [0] === favBandQ ||favBand[1] ===  favBandQ || 
-    //     favBand [2] === favBandQ ||favBand[3] ===  favBandQ ||
-    //     favBand[4] ===  favBandQ )
-    // {
-    // alert ('Yes I love them, you\'re correct!');
-    //     score++;
-    //     break;
-    // } else {
-    //     alert('soory, you gussed worong');
-    // } 
-
+  }
+}
