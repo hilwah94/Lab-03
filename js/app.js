@@ -1,13 +1,22 @@
 
 'use srtict';
+function welcomingMessege()
+{
+  alert ('Welcome to my web site!');
+}
+welcomingMessege();
 
-alert('welcome to my web site');
-
+function userName()
+{
 let userName = prompt('what\'s your name ?');
-userName : userName.toLowerCase
+userName.toLowerCase
 console.log(userName);
 alert('Welcome to my website ' + userName);
+}
+userName();
 
+function alien ()
+{
 let Alien = prompt( 'Am I Alien ?');
 
 switch(Alien.toLowerCase())
@@ -23,9 +32,13 @@ switch(Alien.toLowerCase())
         
         alert('it\'s scary i know ');
 }
+}
+alien();
 
-let  memes = prompt('do i like memes ?');
-switch(memes.toLowerCase())
+function memes ()
+{
+  let memes = prompt('do i like memes ?');
+  switch(memes.toLowerCase())
 { case 'yes':
   case 'y' :
     alert('more than any thing');
@@ -37,7 +50,12 @@ switch(memes.toLowerCase())
     default:
         alert('even we aliens love memes');
 }
+}
 
+memes ();
+
+function catPerson ()
+{
 let  catPerson = prompt( 'Am i a cat person?');
 switch(catPerson.toLowerCase())
 { case 'yes':
@@ -51,7 +69,12 @@ switch(catPerson.toLowerCase())
     default:
         alert('bet in general are human best friend');
 }
+}
 
+catPerson ();
+
+function music ()
+{
 let music = prompt( 'do i like music?');
 switch(music.toLowerCase())
 { case 'yes':
@@ -65,9 +88,19 @@ switch(music.toLowerCase())
     default:
         alert('music is therapy');
 }
+}
 
+music();
+
+function greeting()
+{
 alert('you are welcome to visit us any time');
+}
 
+greeting();
+
+function favNum()
+{
 let score = 0;
 let favNum = null;
 
@@ -93,36 +126,28 @@ for (let i=0 ; i<4 ; i++)
     }
     
 }
+}
+favNum();
 
-let favBand = ['Metallica','Nirvana','Opeth','Pink Floyd','Katatonia'];
-console.log(favBand)
-for (let j=0;j<6;j++)
+
+function favBand()
 {
-    favBandQ = prompt('what is my favourite band ?');
-    favBandQ = favBandQ.toLowerCase();
-    if (favBandQ===favBand[0] || favBandQ===favBand[1] || favBandQ===favBand[2]
-        || favBandQ===favBand[3] || favBandQ===favBand[4])
-    
-        {
-            alert ('Yep, I love them');
-            break;
-        } else {
-            alert('soory, you gussed worong');
-        }
-
-    }
-    
-    // if(favBand[0],[1],[2],[3],[4] === favBandQ)
-    // { alert ('Yep, I love them')
-    // this method don't work
-    // if (favBand [0] === favBandQ ||favBand[1] ===  favBandQ || 
-    //     favBand [2] === favBandQ ||favBand[3] ===  favBandQ ||
-    //     favBand[4] ===  favBandQ )
-    // {
-    // alert ('Yes I love them, you\'re correct!');
-    //     score++;
-    //     break;
-    // } else {
-    //     alert('soory, you gussed worong');
-    // } 
-
+  let favBand = ['metallica','nirvana','opeth','pink floyd','katatonia'];
+  console.log(favBand)
+  for (let j=0;j<6;j++)
+  {
+      favBandQ = prompt('what is my favourite band ?');
+      favBandQ.toLowerCase();
+      if (favBandQ===favBand[0] || favBandQ===favBand[1] || favBandQ===favBand[2]
+          || favBandQ===favBand[3] || favBandQ===favBand[4])
+      
+          {
+              alert ('Yep, I love them');
+              break;
+          } else {
+              alert('soory, you gussed worong');
+          }
+  
+      }
+}
+favBand();
